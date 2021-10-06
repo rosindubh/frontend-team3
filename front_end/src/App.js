@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useState} from "react";
 import { fetchRequest, login } from './utils';
-import { Login } from "./components/login"
+import Login from "./components/login"
 import { SignUp } from './components/signup';
 
 
