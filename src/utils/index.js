@@ -1,3 +1,4 @@
+//phil welsby - 6 oct 2021 - utils/index.js
 export const fetchRequest = async (username, email, pass, setter) => {
     try {
         const response = await fetch("http://localhost:5000/user", {

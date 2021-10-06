@@ -1,3 +1,4 @@
+//phil welsby - 6 oct 2021 signUp
 import React from 'react'
 
 export const SignUp = ({setUserName, setEmail, setPass, submitHandler}) => {
