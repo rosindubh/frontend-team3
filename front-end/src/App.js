@@ -24,6 +24,9 @@ const App = ()=> {
   const loginHandler = (e) => {
     e.preventDefault();
     login(email, pass, setData);
+    return(
+      <Homepage />
+    )
   }
 
   return (
@@ -39,7 +42,7 @@ const App = ()=> {
     </div>
     <div className="content">
     <Switch>
-      <Route path="/dashboard" component={Homepage} />
+      <Route path="/homepage" component={Homepage} />
     </Switch>
   </div>
 </div>
