@@ -9,7 +9,7 @@ function Homepage(props) {
  
   return (
     <div>
-      Welcome User!<br /><br />
+     {`Welcome ${data.user.name}`}<br /><br />
       <input type="button" onClick={handleLogout} value="Logout" />
     </div>
   );
