@@ -1,15 +1,14 @@
 import React from 'react';
  
-function Homepage(props) {
+function Homepage(history) {
  
   // handle click event of logout button
   const handleLogout = () => {    
-    props.history.push('/login');
   }
  
   return (
     <div>
-     {`Welcome ${data.user.name}`}<br /><br />
+     <h1>Homepage</h1><br /><br />
       <input type="button" onClick={handleLogout} value="Logout" />
     </div>
   );

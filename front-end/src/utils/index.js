@@ -1,6 +1,6 @@
 export const fetchRequest = async (username, email, pass, setter) => {
     try {
-        const response = await fetch("http://localhost:5000/user", {
+        const response = await fetch("https://postcard-pals.herokuapp.com/user", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
@@ -18,9 +18,9 @@ export const fetchRequest = async (username, email, pass, setter) => {
     }
 }
 
-export const login = async (email, pass, setter) => {
+export const login = async (email, pass, setter, history) => {
     try {
-        const response = await fetch("http://localhost:5000/user/login", {
+        const response = await fetch("https://postcard-pals.herokuapp.com/user/login", {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
